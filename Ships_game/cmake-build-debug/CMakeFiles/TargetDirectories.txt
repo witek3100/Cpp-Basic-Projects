@@ -1,0 +1,3 @@
+/home/witek/Desktop/C++_Proste_Projekty/Ships_game/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/witek/Desktop/C++_Proste_Projekty/Ships_game/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/witek/Desktop/C++_Proste_Projekty/Ships_game/cmake-build-debug/CMakeFiles/Ships.dir

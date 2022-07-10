@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships/cmake-build-debug"
+			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships_game/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships"
+			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships_game"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships/cmake-build-debug"
+			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships_game/cmake-build-debug"
 		},
 		{
 			"name" : "Ships_IS_TOP_LEVEL",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships"
+			"value" : "/home/witek/Desktop/C++_Proste_Projekty/Ships_game"
 		}
 	],
 	"kind" : "cache",
