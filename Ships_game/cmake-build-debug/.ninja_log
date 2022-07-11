@@ -1,19 +1,10 @@
 # ninja log v5
 1	11	1657547519395106156	CMakeFiles/Ships.dir/source_files/Ships.cpp.o	5e4e72584ea2794
-168	215	1657549150617282194	Ships	37a1390cb3ba9580
-0	10	1657550285505456258	build.ninja	3b887e4d3d357199
+160	200	1657559188245480386	Ships	19260dbf3cdaec72
+0	9	1657550285517455585	CMakeFiles/Ships.dir/source_files/Board.cpp.o	aa5e7879b952363
+0	10	1657571632442940960	build.ninja	3b887e4d3d357199
 1	20	1657542618602237459	CMakeFiles/Ships.dir/Ships.cpp.o	e242904353f8e6cd
 0	148	1657546483431680813	CMakeFiles/Ships.dir/Menu.cpp.o	a51e9a4b5f091d20
-1	202	1657548735061713768	CMakeFiles/Ships.dir/source_files/Game.cpp.o	2ca7a2e5d6ad79c3
-1	168	1657549150569283022	CMakeFiles/Ships.dir/source_files/Menu.cpp.o	a525060a9331f4a0
-1	158	1657549150557283229	CMakeFiles/Ships.dir/main.cpp.o	ee4dd58057a3948b
-0	10	1657550285505456258	build.ninja	3b887e4d3d357199
-0	9	1657550285517455585	CMakeFiles/Ships.dir/source_files/Board.cpp.o	aa5e7879b952363
-0	174	1657550285681446396	CMakeFiles/Ships.dir/source_files/Game.cpp.o	2ca7a2e5d6ad79c3
-0	176	1657550285685446171	CMakeFiles/Ships.dir/main.cpp.o	ee4dd58057a3948b
-0	199	1657550285709444826	CMakeFiles/Ships.dir/source_files/Menu.cpp.o	a525060a9331f4a0
-199	250	1657550285757442136	Ships	19260dbf3cdaec72
 1	158	1657559188201481154	CMakeFiles/Ships.dir/source_files/Game.cpp.o	2ca7a2e5d6ad79c3
-0	160	1657559188205481085	CMakeFiles/Ships.dir/main.cpp.o	ee4dd58057a3948b
 1	160	1657559188205481085	CMakeFiles/Ships.dir/source_files/Menu.cpp.o	a525060a9331f4a0
-160	200	1657559188245480386	Ships	19260dbf3cdaec72
+0	160	1657559188205481085	CMakeFiles/Ships.dir/main.cpp.o	ee4dd58057a3948b

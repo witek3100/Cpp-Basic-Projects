@@ -19,7 +19,8 @@ public:
     Game(int BoardSize);
     void player_setting_ships();
     void computer_setting_ships();
-    string input();
+    string input(int ship_size);
+    bool ship_on_nearby_field(int x, int y, int ship_size, int orientation);
 };
 
 

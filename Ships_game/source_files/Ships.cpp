@@ -3,6 +3,8 @@
 //
 #include "../header_files/Ships.h"
 
+using namespace std;
+
 Ships::Ships() {}
 
 Destroyer::Destroyer(string s) {
@@ -31,3 +33,4 @@ bool Destroyer::is_sunk() {
         }
     } return true;
 }
+

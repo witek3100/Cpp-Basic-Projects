@@ -13,9 +13,10 @@ Game::Game(int BoardSize):board_size(BoardSize) {
 }
 
 void Game::player_setting_ships() {
-    cout << "choose locations for you ships:  (instruction in main menu might be helpful)" << endl;
+    cout << "choosing locations for you ships (instruction in main menu might be helpful)" << endl;
 
-    player_ships[0] = new Destroyer(input());
+    cout << "choose location for destroyer (ship size 5): " << endl;
+    player_ships[0] = new Destroyer(input(5));
     cout << player_ships[0]->x << player_ships[0]->y << player_ships[0]->is_sunk();
 }
 
@@ -23,14 +24,25 @@ void Game::computer_setting_ships() {
 
 }
 
-string Game::input(){
-    string s;
-    while (1){
-        cin >> s;
-        if (s.length() != 3){
-            cout << "error, take a look on instruction or try again ... ";
-        } else {
-            return s;
+string Game::input(int ship_size) {
+    while (1) {
+        string str;
+        cin >> str;
+        int x = static_cast<int>(str[0]);
+        int y = static_cast<int>(str[1]);
+        char orientation = str[2];
+        if (orientation == 'v') {
+            if (!(0 <= x < board_size && 0 <= y && y + ship_size < board_size)) {
+                cout << "error, ships exceeds board, try again...";
+            } else if (ship_on_nearby_field(x,y,orientation,ship_size)){
+                cout << "error, ship is touching another ship, try again..,";
+            } else {
+                return str;
+            }
         }
     }
+}
+
+bool Game::ship_on_nearby_field(int x, int y, int ship_size, int orientation) {
+    for (int i=0;  )
 }

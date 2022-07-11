@@ -5,6 +5,7 @@
 #ifndef SHIPS_SHIPS_H
 #define SHIPS_SHIPS_H
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -28,5 +29,6 @@ class Destroyer : public Ships {
 public:
     Destroyer(string s);
     bool is_sunk();
+    string input();
 };
 #endif //SHIPS_SHIPS_H
