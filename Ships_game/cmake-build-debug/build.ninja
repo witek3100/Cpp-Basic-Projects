@@ -96,6 +96,12 @@ build CMakeFiles/Ships.dir/source_files/Game.cpp.o: CXX_COMPILER__Ships_Debug /h
   OBJECT_DIR = CMakeFiles/Ships.dir
   OBJECT_FILE_DIR = CMakeFiles/Ships.dir/source_files
 
+build CMakeFiles/Ships.dir/header_files/Board.cpp.o: CXX_COMPILER__Ships_Debug /home/witek/Desktop/C++_Proste_Projekty/Ships_game/header_files/Board.cpp || cmake_object_order_depends_target_Ships
+  DEP_FILE = CMakeFiles/Ships.dir/header_files/Board.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Ships.dir
+  OBJECT_FILE_DIR = CMakeFiles/Ships.dir/header_files
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Ships
@@ -104,7 +110,7 @@ build CMakeFiles/Ships.dir/source_files/Game.cpp.o: CXX_COMPILER__Ships_Debug /h
 #############################################
 # Link the executable Ships
 
-build Ships: CXX_EXECUTABLE_LINKER__Ships_Debug CMakeFiles/Ships.dir/main.cpp.o CMakeFiles/Ships.dir/source_files/Ships.cpp.o CMakeFiles/Ships.dir/source_files/Menu.cpp.o CMakeFiles/Ships.dir/source_files/Game.cpp.o
+build Ships: CXX_EXECUTABLE_LINKER__Ships_Debug CMakeFiles/Ships.dir/main.cpp.o CMakeFiles/Ships.dir/source_files/Ships.cpp.o CMakeFiles/Ships.dir/source_files/Menu.cpp.o CMakeFiles/Ships.dir/source_files/Game.cpp.o CMakeFiles/Ships.dir/header_files/Board.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Ships.dir
   POST_BUILD = :
