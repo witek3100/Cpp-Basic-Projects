@@ -1,48 +1,51 @@
 #include <iostream>
 #include "Ships.h"
+#include <cstdlib>
 
 using namespace std;
 
-struct field {
-    bool was_shot;
-    bool ship;
+class Menu {
+public:
+    Menu(){
+        exit = false;
+        print_menu();
+    }
+    void print_menu(){
+        cout << "\n------SHIPS GAME------" << "\n choose option:  1 - play    2 - instructions    3 - options    4 - exit" << endl;
+        int n;
+        cin >> n;
+        switch(n){
+            case 1:{
+                system("clear");
+            }
+            case 2:{
+                system("clear");
+            }
+            case 3:{
+                system("clear");
+                break;
+            }
+            case 4:{
+                exit = true;
+                cout << "exiting..." << endl;
+                break;
+            }
+            default:{
+                cout << "no action for this key, try again..." << endl;
+                break;
+            }
+        }
+    }
+    bool exit;
 };
 
-field EnemyBoard[10][10] ,PlayerBoard[10][10];
-int player_ships_left = 6, enemy_ships_left = 6;
-
-void print_boards(){
-    cout << "YOUR SHIPS:" << endl << "\t shpis left: " << player_ships_left << "  ships destroyed: " << 6 - player_ships_left << endl;
-    for (int i=0; i<10; i++ ){
-        for (int j=0; j<10; j++){
-            if (PlayerBoard[i][j].was_shot == true){
-                if (PlayerBoard[i][j].ship == true){
-
-                } else {
-                    cout << "[0]";
-                }
-            } else {
-                cout << "[ ]";
-            }
-        } cout << endl;
+int main(){
+    bool exit = false;
+    while (!exit){
+        Menu menu;
+        if (menu.exit == true){
+            exit = true;
+        }
     }
-
-    cout << "ENEMY SHIPS" << endl << "\t shpis left: " << enemy_ships_left << "  ships destroyed: " << 6 - enemy_ships_left << endl;
-    for (int n=0; n<10; n++ ){
-        for (int m=0; m<10; m++){
-            if (EnemyBoard[n][m].was_shot == true){
-                if (EnemyBoard[n][m].ship == true){
-
-                } else {
-                    cout << "[0]";
-                }
-            } else {
-                cout << "[ ]";
-            }
-        } cout << endl;
-    }
-
-}
-int main() {
-    print_boards();
+    return 0;
 }
