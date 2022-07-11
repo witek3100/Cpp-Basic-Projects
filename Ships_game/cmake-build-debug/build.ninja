@@ -78,11 +78,23 @@ build CMakeFiles/Ships.dir/main.cpp.o: CXX_COMPILER__Ships_Debug /home/witek/Des
   OBJECT_DIR = CMakeFiles/Ships.dir
   OBJECT_FILE_DIR = CMakeFiles/Ships.dir
 
-build CMakeFiles/Ships.dir/Ships.cpp.o: CXX_COMPILER__Ships_Debug /home/witek/Desktop/C++_Proste_Projekty/Ships_game/Ships.cpp || cmake_object_order_depends_target_Ships
-  DEP_FILE = CMakeFiles/Ships.dir/Ships.cpp.o.d
+build CMakeFiles/Ships.dir/source_files/Ships.cpp.o: CXX_COMPILER__Ships_Debug /home/witek/Desktop/C++_Proste_Projekty/Ships_game/source_files/Ships.cpp || cmake_object_order_depends_target_Ships
+  DEP_FILE = CMakeFiles/Ships.dir/source_files/Ships.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/Ships.dir
-  OBJECT_FILE_DIR = CMakeFiles/Ships.dir
+  OBJECT_FILE_DIR = CMakeFiles/Ships.dir/source_files
+
+build CMakeFiles/Ships.dir/source_files/Menu.cpp.o: CXX_COMPILER__Ships_Debug /home/witek/Desktop/C++_Proste_Projekty/Ships_game/source_files/Menu.cpp || cmake_object_order_depends_target_Ships
+  DEP_FILE = CMakeFiles/Ships.dir/source_files/Menu.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Ships.dir
+  OBJECT_FILE_DIR = CMakeFiles/Ships.dir/source_files
+
+build CMakeFiles/Ships.dir/source_files/Game.cpp.o: CXX_COMPILER__Ships_Debug /home/witek/Desktop/C++_Proste_Projekty/Ships_game/source_files/Game.cpp || cmake_object_order_depends_target_Ships
+  DEP_FILE = CMakeFiles/Ships.dir/source_files/Game.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Ships.dir
+  OBJECT_FILE_DIR = CMakeFiles/Ships.dir/source_files
 
 
 # =============================================================================
@@ -92,7 +104,7 @@ build CMakeFiles/Ships.dir/Ships.cpp.o: CXX_COMPILER__Ships_Debug /home/witek/De
 #############################################
 # Link the executable Ships
 
-build Ships: CXX_EXECUTABLE_LINKER__Ships_Debug CMakeFiles/Ships.dir/main.cpp.o CMakeFiles/Ships.dir/Ships.cpp.o
+build Ships: CXX_EXECUTABLE_LINKER__Ships_Debug CMakeFiles/Ships.dir/main.cpp.o CMakeFiles/Ships.dir/source_files/Ships.cpp.o CMakeFiles/Ships.dir/source_files/Menu.cpp.o CMakeFiles/Ships.dir/source_files/Game.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Ships.dir
   POST_BUILD = :
