@@ -6,16 +6,20 @@
 #define SHIPS_GAME_H
 #include <iostream>
 #include "Board.h"
+#include "Ships.h"
 
 using namespace std;
 
 class Game {
     Board enemy_board, player_boaard;
-    int board_size;
+    Ships **enemy_ships = new Ships*[6];
+    Ships **player_ships = new Ships*[6];
+    const int board_size;
 public:
-    Game(int BoardSize){
-        board_size = BoardSize;
-    }
+    Game(int BoardSize);
+    void player_setting_ships();
+    void computer_setting_ships();
+    string input();
 };
 
 
