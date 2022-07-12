@@ -3,34 +3,20 @@
 //
 #include "../header_files/Ships.h"
 
-using namespace std;
-
-Ships::Ships() {}
-
-Destroyer::Destroyer(string s) {
-    x = static_cast<int>(s[0]);
-    y = static_cast<int>(s[1]);
-    if (s[2] == 'v'){
-        for (int i=0; i<destroyer_size; i++) {
-            fields[i].is_hit = false;
-            fields[i].x = x;
-            fields[i].y = y + 1;
+Ships::Ships(int sz, int X, int Y, bool orientation):size(sz), x(X), y(Y), orientation(orientation) {
+    ship_fields = new ship_field[size];
+    if (orientation == 1){
+        for (int i=0; i<size; i++){
+            ship_fields[i].x = x;
+            ship_fields[i].y = y+i;
+            ship_fields[i].is_hit = false;
         }
-    }
-    if (s[2] == 'h'){
-        for (int i=0; i<destroyer_size; i++) {
-            fields[i].is_hit = false;
-            fields[i].x = x + 1;
-            fields[i].y = y;
+    } else if (orientation == 0){
+        for (int i=0; i<size; i++){
+            ship_fields[i].x = x+1;
+            ship_fields[i].y = y;
+            ship_fields[i].is_hit = false;
+
         }
     }
 }
-
-bool Destroyer::is_sunk() {
-    for (auto i: fields){
-        if (!i.is_hit){
-            return false;
-        }
-    } return true;
-}
-

@@ -7,28 +7,18 @@
 #include <string>
 #include <iostream>
 
-using namespace std;
-
-const int destroyer_size = 5;
-
-struct ship_field{
+struct ship_field {
     int x, y;
     bool is_hit;
 };
 
 class Ships {
 public:
-    int x, y;
+    int size, x, y;
+    bool orientation;
+    ship_field *ship_fields;
+    Ships(int sz, int x, int y, bool orientation);
 
-    virtual bool is_sunk();
-    Ships();
 };
 
-class Destroyer : public Ships {
-    ship_field fields[destroyer_size];
-public:
-    Destroyer(string s);
-    bool is_sunk();
-    string input();
-};
 #endif //SHIPS_SHIPS_H

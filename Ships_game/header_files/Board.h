@@ -4,15 +4,19 @@
 
 #ifndef SHIPS_BOARD_H
 #define SHIPS_BOARD_H
+#include "Ships.h"
+
 struct field {
     int x, y;
+    Ships *ship;
+    bool was_shot;
 };
 
 class Board {
     const int board_size;
+public:
     field **board;
-    field *occupied_fields;
+    Board(int BS);
 };
 
-
-#endif //SHIPS_BOARD_H
+#endif
